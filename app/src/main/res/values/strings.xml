@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Logica</string>
+    <string name="left_column"><![CDATA[<b>A</b><br /><br />T<br /><br />T<br /><br />F<br /><br />F]]></string>
+    <string name="middle_column"><![CDATA[<b>A</b><br /><br />T<br /><br />F<br /><br />T<br /><br />F]]></string>
+    <string name="right_column">A ^ B</string>
+    <string name="textViewQuery">Conjunction (AND)</string>
+    <string name="buttonSubmit">Submit</string>
+</resources>

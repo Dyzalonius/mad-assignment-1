@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/textViewQuery"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewColumnLeft"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewColumnMiddle"
+        app:layout_constraintEnd_toStartOf="@+id/textViewColumnMiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewColumnMiddle"
+        tools:text="A\n\nT\n\nT\n\nF\n\nF" />
+
+    <TextView
+        android:id="@+id/textViewColumnMiddle"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuery"
+        tools:text="B\n\nT\n\nF\n\nT\n\nF" />
+
+    <TextView
+        android:id="@+id/textViewColumnRight"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/right_column"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewColumnMiddle"
+        app:layout_constraintTop_toTopOf="@+id/textViewColumnMiddle" />
+
+    <EditText
+        android:id="@+id/editText1"
+        style="@style/EditText"
+        app:layout_constraintBottom_toTopOf="@id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewColumnMiddle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewColumnRight"
+        tools:ignore="Autofill, LabelFor" />
+
+    <EditText
+        android:id="@+id/editText2"
+        style="@style/EditText"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewColumnMiddle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewColumnMiddle"
+        app:layout_constraintTop_toTopOf="@+id/textViewColumnMiddle"
+        tools:ignore="Autofill, LabelFor" />
+
+    <EditText
+        android:id="@+id/editText3"
+        style="@style/EditText"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewColumnMiddle"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:ignore="Autofill, LabelFor" />
+
+    <EditText
+        android:id="@+id/editText4"
+        style="@style/EditText"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewColumnMiddle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewColumnMiddle"
+        tools:ignore="Autofill, LabelFor" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/buttonSubmit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
